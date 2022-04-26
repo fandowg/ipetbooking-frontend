@@ -1,0 +1,63 @@
+// $color-primary: #EA6A2A;
+// $color-primary: #005377;
+$color-primary:#5DBFD6;
+$color-secondary: #EA6A2A;
+$color-secondary-light:#F2A67F;
+// $color-dark-primary: #41695B;
+$color-dark-primary: #005377;
+$color-primary-gradient: linear-gradient(0deg, #98B8AD 0%, #98B8AD 100%);
+// $color-primary-gradient: linear-gradient(0deg, #005377 0%, #27939d 100%);
+
+// Layout
+$color-sidebar-bg: #121931;
+$color-body-bg: #F9FAFB;
+
+// Content
+$color-heading-text: #333;
+
+$color-text-primary: #121931;
+$color-text-regular: #606266; // element-ui
+$color-text-secondary: #909399; // element-ui
+$color-text-placeholder: #c0c4cc; // element-ui
+
+// Border
+$color-border-base: #dcdfe6;
+$color-border-light: #e4e7ed;
+$color-border-lighter: #ebeef5;
+$color-border-extra-light: #f2f6fc;
+$border-radius:8px;
+
+// Link
+$color-link-text: lighten($color-primary, 5%);
+$color-link-text-active: $color-primary;
+
+// Inputs
+$color-input-border: lighten($color-heading-text, 50%);
+$color-input-bg: #f2f2f2;
+
+// Buttons
+$color-button-bg: $color-link-text;
+$color-button-disabled-bg: darken(desaturate($color-button-bg, 20%), 10%);
+$color-button-text: white;
+
+// State
+$color-state-danger: #DC2A2A;
+$color-state-success: #60A32F;
+$color-state-info: #909399;
+$color-state-warning: #E2B550;
+$color-state-finish: #27939d;
+
+// Form
+
+$color-theme-map: (
+  "primary": $color-primary,
+  "primary-dark": $color-dark-primary,
+  "secondary": $color-secondary,
+  "secondary-light": $color-secondary-light,
+  "white": #FFF,
+  "success": $color-state-success,
+  "warning": $color-state-warning,
+  "danger": $color-state-danger,
+  "info": $color-state-info,
+  "transparent": transparent,
+);

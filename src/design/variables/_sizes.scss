@@ -1,0 +1,24 @@
+// Layout
+$size-header-height: 60px;
+$size-sidebar-width: 64px;
+$size-content-height: 65vh;
+
+// GRID
+$size-grid-padding: 1.3rem;
+
+// CONTENT
+$size-content-width-max: 50rem;
+$size-content-width-min: 25rem;
+
+// INPUTS
+$size-input-padding-vertical: 0.75em;
+$size-input-padding-horizontal: 1em;
+$size-input-padding: $size-input-padding-vertical $size-input-padding-horizontal;
+$size-input-border: 1px;
+$size-input-border-radius: (1em + $size-input-padding-vertical * 2) / 10;
+
+// Buttons
+$size-button-padding-vertical: 12px;
+$size-button-padding-horizontal: 20px;
+$size-button-padding: $size-button-padding-vertical
+  $size-button-padding-horizontal;

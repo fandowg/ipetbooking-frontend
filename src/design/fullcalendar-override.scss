@@ -1,0 +1,122 @@
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/timegrid/main.css';
+@import '@design';
+.fc-toolbar.fc-header-toolbar {
+  padding: 15px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid $color-border-base;
+}
+.fc-view-container {
+  padding: 20px;
+}
+
+.fc-event {
+  @include layer-elevation(1);
+
+  padding: 5px;
+  background-color: $color-state-info;
+  border: none;
+  border-radius: 0;
+  .capacity {
+    position: absolute;
+    bottom: 0;
+  }
+  .fc-title {
+    display: none;
+  }
+
+  &.is-booked:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: $color-state-danger;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+  &.is-full {
+    background-color: $color-state-danger;
+  }
+  &.is-open {
+    background-color: $color-state-success;
+  }
+  &.is-close {
+    background-color: $color-state-warning;
+  }
+}
+
+.fc-now-indicator {
+  border-color: $color-primary;
+}
+.fc-unthemed {
+  td {
+    border-color: $color-border-base;
+    &.fc-today {
+      background: lighten($color-primary, 30%);
+    }
+  }
+}
+.fc-time-grid .fc-slats {
+  .fc-minor td {
+    border-top: none;
+  }
+  // hide 左側 12 時
+  [data-time]:first-child span {
+    display: none;
+  }
+}
+.fc .fc-axis {
+  color: #9b9b9b;
+  border-top: none;
+  span {
+    position: relative;
+    top: -10px;
+  }
+}
+
+// table thead no border
+.fc-head .fc-head-container {
+  padding: 15px 0;
+  color: #9b9b9b;
+  border: none;
+  th {
+    font-weight: normal;
+    border: none;
+  }
+}
+// dayGridMonth day is past
+.fc-past {
+  color: #cecece;
+}
+.fc-content-skeleton .fc-day-top {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.fc-button-primary {
+  color: #9b9b9b;
+  background-color: #e3e3e3;
+  border-color: #e3e3e3;
+  border-radius: 0;
+  &:disabled {
+    color: #9b9b9b;
+    background-color: #e3e3e3;
+    border-color: #e3e3e3;
+    box-shadow: none;
+  }
+  &.fc-today-button,
+  &:not(:disabled):active,
+  &:not(:disabled).fc-button-active {
+    @include layer-elevation(1);
+
+    color: $color-text-primary;
+    background-color: white;
+    border-color: white;
+  }
+  &:focus,
+  &:not(:disabled):active:focus,
+  &:not(:disabled).fc-button-active:focus {
+    @include layer-elevation(1);
+  }
+}

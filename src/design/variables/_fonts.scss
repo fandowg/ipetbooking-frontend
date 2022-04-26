@@ -1,0 +1,125 @@
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400&display=swap');
+
+$range: U+00-024F, U+3000-303F, U+30-39; // 英文 中日韓符號和標點 數字
+// ====== Jost ======//
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v4/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+  unicode-range: $range;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v4/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+  unicode-range: $range;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v4/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+  unicode-range: $range;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v4/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+  unicode-range: $range;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v4/92zatBhPNqw73ord4jQmfxIC7w.woff2) format('woff2');
+  unicode-range: $range;
+}
+/* latin */
+@font-face {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v4/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
+  unicode-range: $range;
+}
+
+$system-default-font-family: 'PingFang TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$heading-font-family: $system-default-font-family;
+$heading-font-weight: 400;
+
+$content-font-family: $system-default-font-family;
+$content-font-weight: 300;
+
+%font-heading {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  color: $color-heading-text;
+}
+
+%font-content {
+  font-family: $content-font-family;
+  font-weight: $heading-font-weight;
+  color: $color-text-primary;
+}
+
+$font-sans: 'Noto Sans TC', serif;
+$font-serif: 'Noto Serif TC', serif;
+$font-jost: 'Jost', sans-serif;
+$font-awesome: "Font Awesome 5 Pro";
+$font-fontello: 'fontello';
+
+// $font-family-map: () !default;
+$font-family-map: (
+  'sans': $font-sans,
+  'serif': $font-serif,
+  'jost': $font-jost,
+);
+
+$font-size-map: (
+  '1': 2.25em,
+  '2': 1.5em,
+  '3': 1.25rem,
+  '4': 1.125rem,
+  '5': 1rem,
+  '6': 0.875rem,
+  '7xl': 4.5rem,
+  '6xl': 3.625rem,
+  '5xl': 3rem,
+  '4xl': 2.5rem,
+  '3xl': 1.875rem,
+  '2xl': 1.5rem,
+  'xl': 1.25rem,
+  'lg': 1.125rem,
+  'base': 1rem,
+  'sm': 0.875rem,
+  '2sm': 0.75rem,
+) !default;
+
+$font-weight-map: (
+  'thin': 100,
+  'extra-light': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semi-bold': 600,
+  'bold': 700,
+  'extra-bold': 800,
+  'black': 900,
+);
+

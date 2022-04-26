@@ -1,0 +1,108 @@
+@import '~vue-cal/dist/vuecal.css';
+.vuecal__title-bar {
+  button {
+    // color: #303133;
+  }
+}
+
+.vuecal__weekdays-headings {
+  padding: 0;
+}
+
+.vuecal--date-picker {
+  box-shadow: none;
+  .vuecal__title-bar {
+    padding: 10px 0;
+    background: #f2eae680;
+    .vuecal__arrow {
+      font-size: 12px;
+    }
+  }
+  .vuecal__weekdays-headings {
+    color: #F2A67F;
+    .vuecal__heading{
+      opacity: 1;
+    }
+  }
+  .month-view {
+    .vuecal__cell {
+      z-index: 1;
+      .vuecal__cell-content {
+        overflow: hidden;
+        .vuecal__cell-date {
+          &.is-expired {
+            color: rgba(0, 0, 0, 0.25);
+          }
+          &.is-available {
+            color: rgb(65 105 92);
+            &::before {
+              background-color: rgb(234 241 239);
+            }
+          }
+          &.is-full {
+            color: rgb(199 148 132);
+            &::before {
+              background-color: rgb(242 234 231);
+            }
+          }
+          &.is-unscheduled {
+            color: #f85858;
+          }
+          &.is-available,
+          &.is-full {
+            &::before {
+              content: '';
+              position: absolute;
+              z-index: -1;
+              width: 25px;
+              height: 25px;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+      &.vuecal__cell--disabled {
+        pointer-events: none;
+      }
+      &.vuecal__cell--today .vuecal__cell-content {
+        background-color: #F2A67F !important;
+        color: #fff !important;
+        border-color: transparent;
+        span {
+          color: inherit !important;
+        }
+      }
+    }
+  }
+  .year-view {
+    .vuecal__cell {
+      .vuecal__cell-content {
+        flex: 1;
+        padding: 0;
+        margin: 0 10px;
+        height: 40px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.vuecal--date-picker:not(.vuecal--day-view) .vuecal__cell--selected .vuecal__cell-content {
+  border-color: white !important;
+  box-shadow: 0px 0px 0px 2px #F2A67F;
+  background-color: inherit;
+  color: inherit;
+}
+
+.vuecal--date-picker .month-view .vuecal__cell .vuecal__cell-content .vuecal__cell-date.is-available::before {
+  background-color: rgba(#FDD7AA,0.4);
+}
+
+.vuecal--day-view:not(.vuecal--overflow-x) .vuecal__split-days-headers {
+  margin-left: 0;
+}
+
+.vuecal__now-line {
+  z-index: 4;
+}

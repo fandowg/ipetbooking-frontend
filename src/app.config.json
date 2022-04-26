@@ -1,0 +1,10 @@
+{
+  "title": "iPetBooking",
+  "description": "Opinionated boilerplate project for an enterprise Vue frontend",
+  "appMaxWidth": 1320,
+  "appWidth": "100%",
+  "appMaxHeight": "100vh",
+  "defaultLocale": "zh-TW",
+  "fallbackLocale": "zh-TW",
+  "contactEmail": "contact@dingsomething.com"
+}

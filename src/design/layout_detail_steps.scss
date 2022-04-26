@@ -1,0 +1,33 @@
+@import '@design';
+
+.page {
+  margin-bottom: 60px;
+}
+
+.card-wrapper {
+  min-height: $size-content-height;
+  margin-bottom: 60px;
+}
+
+.footer {
+  @include layer-elevation(2);
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  left: $size-sidebar-width;
+  z-index: $layer-page-footer-z-index;
+  width: calc(100% - #{$size-sidebar-width});
+  padding: 20px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  background-color: white;
+  :global{
+    .el-button{
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+}

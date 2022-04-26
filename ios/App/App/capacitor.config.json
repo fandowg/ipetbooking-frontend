@@ -1,0 +1,22 @@
+{
+	"appId": "com.ipetbooking.admin",
+	"appName": "iPet Business",
+	"webDir": "public-app",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			]
+		},
+		"Badge": {
+			"persist": true,
+			"autoClear": false
+		}
+	},
+	"server": {
+		"hostname": "admin.ipetbooking.com"
+	}
+}

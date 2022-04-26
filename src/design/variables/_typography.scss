@@ -1,0 +1,14 @@
+@import 'node_modules/modularscale-sass/stylesheets/modularscale';
+
+$modularscale: (
+  base: 1em 1140em 14em,
+  ratio: 1.3,
+);
+
+$font-size-smaller: ms(-2);
+$font-size-small: ms(-1);
+$font-size-large: ms(1);
+$font-size-larger: ms(2);
+
+$font-letter-spacing-small: 0.15em;
+$font-letter-spacing-base: 0.2em;
